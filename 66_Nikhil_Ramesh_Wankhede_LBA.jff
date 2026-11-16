@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<structure>
+  <type>turing</type>
+  <tapes>1</tapes>
+  <automaton>
+    <state id="0" name="find_a">
+      <x>105</x>
+      <y>105</y>
+      <initial />
+    </state>
+    <state id="1" name="find_b">
+      <x>265</x>
+      <y>105</y>
+    </state>
+    <state id="2" name="rewind">
+      <x>425</x>
+      <y>105</y>
+    </state>
+    <state id="3" name="verify">
+      <x>585</x>
+      <y>105</y>
+    </state>
+    <state id="4" name="accept">
+      <x>105</x>
+      <y>270</y>
+      <final />
+    </state>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>X</read>
+      <write>X</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>a</read>
+      <write>X</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>3</to>
+      <read>Y</read>
+      <write>Y</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>1</to>
+      <read>a</read>
+      <write>a</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>1</to>
+      <read>Y</read>
+      <write>Y</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>2</to>
+      <read>b</read>
+      <write>Y</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>2</to>
+      <read>a</read>
+      <write>a</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>2</to>
+      <read>Y</read>
+      <write>Y</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>0</to>
+      <read>X</read>
+      <write>X</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>3</to>
+      <read>Y</read>
+      <write>Y</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>4</to>
+      <read />
+      <write />
+      <move>S</move>
+    </transition>
+  </automaton>
+</structure>

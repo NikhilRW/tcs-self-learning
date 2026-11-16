@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<structure>
+  <type>grammar</type>
+  <production>
+    <left>E</left>
+    <right>TX</right>
+  </production>
+  <production>
+    <left>X</left>
+    <right>+TX</right>
+  </production>
+  <production>
+    <left>X</left>
+    <right />
+  </production>
+  <production>
+    <left>T</left>
+    <right>FY</right>
+  </production>
+  <production>
+    <left>Y</left>
+    <right>*FY</right>
+  </production>
+  <production>
+    <left>Y</left>
+    <right />
+  </production>
+  <production>
+    <left>F</left>
+    <right>(E)</right>
+  </production>
+  <production>
+    <left>F</left>
+    <right>i</right>
+  </production>
+</structure>

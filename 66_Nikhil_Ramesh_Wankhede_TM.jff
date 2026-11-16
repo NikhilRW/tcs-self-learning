@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<structure>
+  <type>turing</type>
+  <tapes>1</tapes>
+  <automaton>
+    <state id="0" name="scan">
+      <x>105</x>
+      <y>105</y>
+      <initial />
+    </state>
+    <state id="1" name="accept">
+      <x>265</x>
+      <y>105</y>
+      <final />
+    </state>
+    <transition>
+      <from>0</from>
+      <to>0</to>
+      <read>1</read>
+      <write>1</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read />
+      <write>1</write>
+      <move>S</move>
+    </transition>
+  </automaton>
+</structure>

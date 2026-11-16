@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<structure>
+  <type>grammar</type>
+  <production>
+    <left>S</left>
+    <right>E</right>
+  </production>
+  <production>
+    <left>E</left>
+    <right>E+T</right>
+  </production>
+  <production>
+    <left>E</left>
+    <right>T</right>
+  </production>
+  <production>
+    <left>T</left>
+    <right>i</right>
+  </production>
+</structure>
